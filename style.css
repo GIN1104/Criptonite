@@ -1,0 +1,158 @@
+/* resets */
+body { margin:0px; padding:0px; }
+
+/* main */
+header {
+  
+    background-repeat: none;
+    z-index: 10;
+
+}
+.header-banner {
+    background-color: #dfdfdf;
+    z-index: 10;
+    width: 100%;
+}
+#logo{
+  position: absolute;
+  right: 0;
+  top:0;
+}
+header h1 {
+    background-color:#dfdfdf;
+    color: black;
+    padding: 0 1rem;
+    margin:0;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    border-bottom: 1px solid black;
+    
+}
+
+nav {
+    width: 100%;
+    background: #dfdfdf;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+
+}
+
+nav div.site-title {
+    color: black;
+    font-size: 2rem;
+    line-height: 60px;
+    display: none;
+    
+}
+nav div.site-title.visible-title {
+    display: block;
+}
+
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+    z-index: 10;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+    z-index: 10;
+}
+
+
+.backgroundImg {
+  /* The image used */
+  background-image: url("criminal-bitcoin-how-deep-is-the-dark-side-of-the-most-widely-traded-cryptocurrency.jpg");
+
+  /* Set a specific height */
+  height: 100%; 
+  min-height: 13800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+
+  background-size: cover;
+}
+
+.card{
+ background-color: rgba(155, 123, 55, 0.879);
+ text-align: center;
+}
+.card-text, .card-title{
+    color: rgb(255, 255, 255);
+}
+.custom-switch{
+    text-align: right;
+}
+
+
+/* ///////// Spinner////////// */
+
+.loader {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    display: none;
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  .loader::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    border-top-color: transparent;
+    border-width: 4px;
+    border-radius: 50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+  }
+
+  .abouMe{
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 30px;
+    color: white;
+
+  }
+#myPic{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
